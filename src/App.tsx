@@ -46,13 +46,20 @@ function App() {
       </header>
 
       <Greet name='Ninjas' messageCount={20} isLoggedIn={true} />
+      
       <Person name={PersonName} />
+      
       <PersonList names={nameList}/>
+      
       <Status status='error' />
+      
       <Heading>Placeholder text</Heading>
+      
       <Oscar>
         <Heading>Oscar goes to Leonardo Dicaprio!</Heading>
       </Oscar>
+
+      <Greet name='Makanaki' isLoggedIn={true} />
     </div>
   );
 }
