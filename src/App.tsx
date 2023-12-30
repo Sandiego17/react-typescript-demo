@@ -7,6 +7,7 @@ import { PersonList } from './components/PersonList';
 import { Status } from './components/Status';
 import { Heading } from './components/Heading';
 import { Oscar } from './components/Oscar';
+import { Button } from './components/Button';
 
 function App() {
   const PersonName = {
@@ -60,6 +61,12 @@ function App() {
       </Oscar>
 
       <Greet name='Makanaki' isLoggedIn={true} />
+
+      <Button
+        handleClick={() => {
+          console.log('Button clicked')
+        }}
+      />
     </div>
   );
 }
