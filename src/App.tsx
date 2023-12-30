@@ -1,8 +1,30 @@
-import React from 'react';
+// import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import { Greet } from './components/Greet';
+import { Person } from './components/Person';
+import { PersonList } from './components/PersonList';
 
 function App() {
+  const PersonName = {
+    first: 'Bruce',
+    last: 'Wayne'
+  }
+
+  const nameList = [
+    {
+      first: 'David',
+      last: 'Beckham'
+    },
+    {
+      first: 'Arnold',
+      last: 'Swarzenneger'
+    },
+    {
+      first: 'Sylvester',
+      last: 'Stallone'
+    }
+  ]
   return (
     <div className="App">
       <header className="App-header">
@@ -19,6 +41,10 @@ function App() {
           Learn React
         </a>
       </header>
+
+      <Greet name='Ninjas' messageCount={20} isLoggedIn={true} />
+      <Person name={PersonName} />
+      <PersonList names={nameList}/>
     </div>
   );
 }
