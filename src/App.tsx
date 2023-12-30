@@ -5,6 +5,7 @@ import { Greet } from './components/Greet';
 import { Person } from './components/Person';
 import { PersonList } from './components/PersonList';
 import { Status } from './components/Status';
+import { Heading } from './components/Heading';
 
 function App() {
   const PersonName = {
@@ -47,6 +48,7 @@ function App() {
       <Person name={PersonName} />
       <PersonList names={nameList}/>
       <Status status='error' />
+      <Heading>Placeholder text</Heading>
     </div>
   );
 }
