@@ -11,6 +11,7 @@ import { Button } from './components/Button';
 import { Input } from './components/Input';
 import { Container } from './components/Container';
 import { LoggedIn } from './components/state/LoggedIn';
+import { User } from './components/state/User';
 
 function App() {
   const PersonName = {
@@ -76,6 +77,8 @@ function App() {
       <Container styles={{ border: '1px solid black', padding: '1rem' }} />
 
       <LoggedIn />
+
+      <User />
     </div>
   );
 }
