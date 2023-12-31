@@ -1,5 +1,3 @@
-import React from "react"
-
 type ContainerProps = {
   styles: React.CSSProperties
 }
