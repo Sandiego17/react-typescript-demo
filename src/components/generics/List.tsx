@@ -1,6 +1,6 @@
 type ListProps = {
-  items: string[]
-  onClick: (value: string) => void
+  items: string[] | number[]
+  onClick: (value: string | number) => void
 }
 
 export const List = ({ items, onClick }: ListProps) => {

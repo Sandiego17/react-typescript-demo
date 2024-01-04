@@ -112,6 +112,8 @@ function App() {
         items={['Batman', 'Superman', 'Ironman']}
         onClick={(item) => console.log(item)}
       />
+
+      <List items={[1, 2, 3]} onClick={(item) => console.log(item)} />
     </div>
   );
 }
