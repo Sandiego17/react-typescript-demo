@@ -1,15 +1,18 @@
-type ListProps = {
-  items: string[] | number[]
-  onClick: (value: string | number) => void
+type ListProps<T> = {
+  items: T[]
+  onClick: (value: T) => void
 }
 
-export const List = ({ items, onClick }: ListProps) => {
+export const List = <T extends { id: number }>({
+  items,
+  onClick
+}: ListProps<T>) => {
   return (
     <div>
       <h2>List of Items</h2>
       {items.map((item, index) => {
         return (
-          <div key={index} onClick={() => onClick(item)}>
+          <div key={item.id} onClick={() => onClick(item)}>
             {item}
           </div>
         )
