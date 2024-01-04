@@ -19,6 +19,8 @@ import { User2 } from './components/context/User2';
 import { DomRef } from './components/ref/DomRef';
 import { MutableRef } from './components/ref/MutableRef';
 import { CounterClass } from './components/class/CounterClass';
+import { Private } from './components/auth/Private';
+import { Profile } from './components/auth/Profile';
 
 function App() {
   const PersonName = {
@@ -102,6 +104,8 @@ function App() {
       <MutableRef />
 
       <CounterClass message='The count value is' />
+
+      <Private isLoggedIn={true} component={Profile} />
     </div>
   );
 }
